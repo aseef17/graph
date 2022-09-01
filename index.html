@@ -9,6 +9,20 @@
   .underline-text {
     text-decoration: underline;
   }
+
+  .graph-image {
+    position: relative;
+  }
+
+  .graph-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000000000;
+  }
 </style>
 
 <body>
@@ -65,17 +79,16 @@
   </div>
 
   <!-- BAR GRAOH IMAGE - START -->
-  <div id="bar-graph-div" data-long-press-delay="3000" class="separator" style="clear: both; text-align: center;">
-    <img border="0" data-original-height="349" data-original-width="589" height="349" width="589"
+  <div id="bar-graph-div" data-long-press-delay="3000" class="separator"
+    style="clear: both; text-align: center; pointer-events: none;">
+    <img class="graph-image" border="0" data-original-height="349" data-original-width="589" height="349" width="589"
       src="https://i.ibb.co/F7mJybN/representation-bar-graph.png" />
-    <div style="position:absolute;left:0px;top:0px;right:0px;bottom:0px;z-index:1000" data-original-height="349"
-      data-original-width="589" height="349" width="589"></div>
   </div>
   <!-- BAR GRAOH IMAGE - END -->
   <!-- BAR GRAPH - END-->
 
   <!-- LINE GRAPH - START -->
-  <!-- <div>
+  <div>
     <p>
       <strong class="underline-text">Line graphs</strong> represent how data has changed over time. This type of chart
       is especially useful when you want to demonstrate trends or numbers that are connected. For example, how sales
@@ -84,15 +97,15 @@
         vocabulary</a> will come in handy. Besides, line graphs can show dependencies between two objects during a
       particular period.
     </p>
-  </div> -->
+  </div>
 
   <!-- LINE GRAOH IMAGE - START -->
-  <!-- <div id="line-graph-div" data-long-press-delay="3000" class="separator" style="clear: both; text-align: center;">
+  <div id="line-graph-div" data-long-press-delay="3000" class="separator"
+    style="clear: both; text-align: center; pointer-events: none">
     <img border="0" data-original-height="289" data-original-width="480" height="289" width="480"
       src="https://i.ibb.co/qCXZhw8/unnamed.png" />
-    <div style="position:absolute;left:0px;top:0px;right:0px;bottom:0px;z-index:1000" data-original-height="289"
-      data-original-width="480" height="289" width="480"></div>
-  </div> -->
+
+  </div>
   <!-- LINE GRAOH IMAGE - END -->
   <!-- LINE GRAPH - END-->
   <!-- GRAPHS REPRESENTATION - END -->
